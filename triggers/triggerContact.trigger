@@ -1,0 +1,30 @@
+trigger triggerContact on Contact (before insert,before update, before delete, after insert, after delete) 
+{
+	if(trigger.isbefore)
+    {
+        if(trigger.isupdate)
+        {
+            contactHandler.AccountPhoneUp(trigger.oldmap, trigger.newmap);
+            contactHandler.otherPhoneUp(Trigger.oldMap,Trigger.newMap);
+        }
+        if(trigger.isinsert)
+        {
+            contactHandler.AcntIdNullError(Trigger.new);
+        }
+        if(trigger.isdelete)
+        {
+            contactHandler.SourceDelError(Trigger.old);
+        }
+    }
+    if(trigger.isafter)
+    {
+        if(trigger.isinsert)
+        {
+            contactHandler.customRolllup(Trigger.new);
+        }
+        if(trigger.isdelete)
+        {
+            contactHandler.customRolllup(Trigger.old);
+        }
+    }
+}

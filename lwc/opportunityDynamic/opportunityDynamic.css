@@ -1,0 +1,8 @@
+ul {
+    background: rgb(124, 127, 175);
+   
+}
+ul li {
+    display: block;
+    border: 2px solid rgb(29, 187, 250);
+}

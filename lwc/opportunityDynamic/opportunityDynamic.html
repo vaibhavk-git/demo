@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-m-vertical_medium">
+        
+        <lightning-slider
+        label="Amount Limit"
+        max="100000"
+        min="1000"
+        step="100"
+        value={amount}
+        onchange={handleChange}>
+        </lightning-slider>
+    </div>
+    
+    <lightning-card>
+        <ul>
+            <template for:each={Opportunities.data} for:item="Opportunity">
+                    <li key={Opportunity.Id}><h3>label.opportunityName</h3>{Opportunity.Name}</li>
+                    <li key={Opportunity.Id}><h3>label.opportunityAmount</h3>{Opportunity.Amount}</li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

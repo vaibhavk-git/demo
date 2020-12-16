@@ -1,0 +1,19 @@
+trigger TriggerLead on Lead (before insert, after insert) 
+{
+		if(trigger.isbefore)
+        {
+            if(trigger.isinsert)
+            {
+                leadHandler.leadOwnerQUp(trigger.new);
+                leadHandler.leadscoreCal(trigger.new);
+                leadHandler.ChangeOwner(trigger.new);
+            }
+        }
+    if(trigger.isafter)
+    {
+        if(trigger.isinsert)
+        {
+            leadHandler.insertContact(trigger.new);
+        }
+    }
+}

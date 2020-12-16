@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>banking</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>banking</shortDescription>
+        <value>00G2y000000pW4H</value>
+    </labels>
+    <labels>
+        <fullName>energy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>energy</shortDescription>
+        <value>00G2y000000pW4M</value>
+    </labels>
+    <labels>
+        <fullName>opportunityAmount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>opportunityAmount</shortDescription>
+        <value>Opportunity Amount</value>
+    </labels>
+    <labels>
+        <fullName>opportunityName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>opportunityName</shortDescription>
+        <value>Opportunity Name</value>
+    </labels>
+</CustomLabels>
