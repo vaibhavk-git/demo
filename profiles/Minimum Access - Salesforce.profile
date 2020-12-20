@@ -114,6 +114,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ApexSecurityRest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CaseHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1161,6 +1165,11 @@
         <editable>false</editable>
         <field>Contact.Title</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Top_Secret__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
