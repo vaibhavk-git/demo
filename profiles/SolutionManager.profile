@@ -106,6 +106,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>A</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>AccountHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -115,6 +119,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>ApexSecurityRest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>B</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>C</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -130,6 +142,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LeadProcessor</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LeadProcessorTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LeadScoreTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -139,6 +159,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Prog2Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SyncApex</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -174,6 +198,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>closedwonOppoWithAcCon</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>con2acntMedia</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -187,6 +215,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>distinctLeadSource</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>futureClass</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1149,6 +1181,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.Phone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Primary_Contact__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

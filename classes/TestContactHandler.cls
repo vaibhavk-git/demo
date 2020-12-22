@@ -27,6 +27,6 @@ public class TestContactHandler
         list<contact> clist = new list<contact>();
         clist.add(ct);
        contactHandler.AcntIdNullError(clist);
-      
+       contactHandler.customRolllup(clist);
     }
 }
