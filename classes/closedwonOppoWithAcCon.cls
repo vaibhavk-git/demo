@@ -23,6 +23,11 @@ global class closedwonOppoWithAcCon implements Database.Batchable<sObject>
     global void finish(Database.BatchableContext bc)
     {
         List<Messaging.SingleEmailMessage> mails = new List<Messaging.SingleEmailMessage>();
+        for (string mailId : MapConOPPo.keyset())
+        {
+            messaging.SingleEmailMessage mail = new messaging.SingleEmailMessage();
+            
+        }
     }
     
        
