@@ -16,7 +16,12 @@ global class closedwonOppoWithAcCon implements Database.Batchable<sObject> , Dat
     {
      return Database.getQueryLocator('SELECT' +'Name, ' +'( SELECT Email FROM Contacts WHERE Primary_Contact__c = TRUE LIMIT 1), ' +
                                      '( SELECT Name, Amount FROM Opportunities WHERE StageName LIKE \'Closed Won\') ' 
-                                    +'FROM ' +'Account ' +'WHERE ' +'id ' +'IN ' +'(SELECT AccountId FROM Contact WHERE Primary_Contact__c = TRUE)');
+                                    +'FROM ' +'Account ' +'WHERE ' +'id ' +'IN ' +'(SELECT AccountId FROM Contact WHERE Primary_Contact__c = TRUE)'); 
+    
+     /*   return Database.getQueryLocator(Select Name, (SELECT Email FROM Contacts WHERE Primary_Contact__c = TRUE LIMIT 1), 
+        										(Select Name, Amount From Opportunities where StageName ='Closed Won') 
+         		 								from Account
+         									 Where Id IN : (SELECT AccountId FROM Contact WHERE Primary_Contact__c = TRUE)); */
     }
     global void execute(Database.BatchableContext bc, list<account> alist)
     {
